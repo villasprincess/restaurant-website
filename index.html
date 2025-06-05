@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">
+                <span>Prim's Culinarycraft</span>
+            </a>
+        </div>
+        <nav class="nav">
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#popular">Popular</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search...">
+                <button class="search-button">
+                    
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+            <button class="favorites-button">
+                <i class="fa-solid fa-heart"></i>
+            </button>
+            <div class="menu-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+                <!-- Home Start -->
+    <div class="home" id="home">
+        <div class="main_slide">
+            <div>
+                <h1>Prim's Authentic <span>Food Dishes</span></h1>
+                <p>Experience a world of flavors at Prim's Culinarycraft Restaurant, where our diverse menu showcases an exquisite blend of international cuisines to delight every palate.</p>
+
+                <button class="red_btn" >Order Now </button>
+                
+            </div>
+            <div>
+                <img src="images/foodplate1.jpg" alt="">
+            </div>
+        </div>
+                <!-- Home Ends-->
+
+                <!-- Popular Start-->
+                <div class="popular" id="popular"> 
+                 <div class="main_slide2">
+                    <div class="fav-head">
+                        <h3>Our Popular Food Items</h3>
+                        <p>At Prim's Culinarycraft, our popular dishes are crafted with the freshest ingredients and bold, delicious flavors that keep guests coming back for more. Don't also miss our desserts, sweet treats that are the perfect ending to any meal and a favorite among our patrons.</p>
+                    </div>
+                    <div class="fav-food">
+                        <div class="item">
+                            <div>
+                                <img src="images/fav1.jpg" alt="">
+                            </div>
+                            <h3>Paella</h3>
+                            <p>Spanish Dish</p>
+                            <p class="fav-price">₱1,500.00</p>
+                        </div>
+                        <div class="item">
+                            <div>
+                                <img src="images/chic.jpg" alt="">
+                            </div>
+                            <h3>Chicken Adobo</h3>
+                            <p>Filipino Dish</p>
+                            <p class="fav-price">₱300.00</p>
+                        </div>
+                        <div class="item">
+                            <div>
+                                <img src="images/fav3.jpg" alt="">
+                            </div>
+                            <h3>Sushi</h3>
+                            <p>Japanese Dish</p>
+                            <p class="fav-price">₱1,000.00</p>
+                        </div>
+                        <div class="item">
+                            <div>
+                                <img src="images/fav5.jpg" alt="">
+                            </div>
+                            <h3>Leche Flan</h3>
+                            <p>Filipino Dessert</p>
+                            <p class="fav-price">₱400.00</p>
+                        </div>
+                    </div>
+                    <div class="dsgn"></div>
+                </div>
+                  <!-- Popular Ends-->
+
+            <!--Menu Start-->
+
+    <div class="menu" id="menu">
+    <h1>Our <span>Menu</span></h1>
+    <div class="menu_box">
+
+            <!--Appetizers-->
+
+            <div class="menu_card" data-title="Lumpia" data-price="₱250.00" data-description="Crispy spring rolls filled with a savory mix of vegetables and meat." data-image="images/appetizer1.jpg">
+                <div class="menu_image">
+                    <img src="images/appetizer1.jpg" alt="">
+                </div>
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <div class="menu_info">
+                    <h2>Lumpia</h2>
+                    <h3>₱250.00</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+            </div>
+        <!-- Modal for Menu Details -->
+    <div id="menuModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <img id="modalImage" src="images/appetizer1.jpg" alt="">
+        <h2 id="modalTitle">Lumpia</h2>
+        <h3 id="modalPrice">₱250.00</h3>
+        <p id="modalDescription">Crispy spring rolls filled with a savory mix of vegetables and meat.</p>
+    </div>
+    </div>
+    
+    <div class="menu_card" data-title="KimchiJeon" data-price="₱300.00" data-description="Savory pancakes made with kimchi and scallions, served with a soy-vinegar dipping sauce." data-image="images/appetizer2.jpg">
+        <div class="menu_image">
+            <img src="images/appetizer2.jpg" alt="">
+        </div>
+        <div class="small_card">
+            <i class="fa-solid fa-heart"></i>
+        </div>
+        <div class="menu_info">
+            <h2>KimchiJeon</h2>
+            <h3>₱300.00</h3>
+            <div class="menu_icon">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <a href="#" class="menu_btn">Order Now</a>
+        </div>
+    </div>
+<!-- Modal for Menu Details -->
+<div id="menuModal" class="modal">
+<div class="modal-content">
+<span class="close">&times;</span>
+<img id="modalImage" src="images/appetizer2.jpg" alt="">
+<h2 id="modalTitle">KimchiJeon</h2>
+<h3 id="modalPrice">₱300.00</h3>
+<p id="modalDescription">Savory pancakes made with kimchi and scallions, served with a soy-vinegar dipping sauce.</p>
+</div>
+</div>
+
+<div class="menu_card" data-title="Edamame" data-price="₱150.00" data-description="Steamed young soybeans sprinkled with sea salt, served warm." data-image="images/appetizer3.jpg">
+    <div class="menu_image">
+        <img src="images/appetizer3.jpg" alt="">
+    </div>
+    <div class="small_card">
+        <i class="fa-solid fa-heart"></i>
+    </div>
+    <div class="menu_info">
+        <h2>Edamame</h2>
+        <h3>₱150.00</h3>
+        <div class="menu_icon">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+        <a href="#" class="menu_btn">Order Now</a>
+    </div>
+</div>
+<!-- Modal for Menu Details -->
+<div id="menuModal" class="modal">
+<div class="modal-content">
+<span class="close">&times;</span>
+<img id="modalImage" src="images/appetizer3.jpg" alt="">
+<h2 id="modalTitle">Edamame</h2>
+<h3 id="modalPrice">₱150.00</h3>
+<p id="modalDescription">Steamed young soybeans sprinkled with sea salt, served warm.</p>
+</div>
+</div>
+
+<div class="menu_card" data-title="Patatas Bravas" data-price="₱300.00" data-description="Crispy fried potatoes served with a spicy tomato sauce and garlic aioli." data-image="images/appetizer4.jpg">
+    <div class="menu_image">
+        <img src="images/appetizer4.jpg" alt="">
+    </div>
+    <div class="small_card">
+        <i class="fa-solid fa-heart"></i>
+    </div>
+    <div class="menu_info">
+        <h2>Patatas Bravas</h2>
+        <h3>₱300.00</h3>
+        <div class="menu_icon">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+        <a href="#" class="menu_btn">Order Now</a>
+    </div>
+</div>
+<!-- Modal for Menu Details -->
+<div id="menuModal" class="modal">
+<div class="modal-content">
+<span class="close">&times;</span>
+<img id="modalImage" src="images/appetizer4.jpg" alt="">
+<h2 id="modalTitle">Patatas Bravas</h2>
+<h3 id="modalPrice">₱300.00</h3>
+<p id="modalDescription">Crispy fried potatoes served with a spicy tomato sauce and garlic aioli.</p>
+</div>
+</div>
+
+<div class="menu_card" data-title="Kinilaw" data-price="₱150.00" data-description="Fresh fish marinated in vinegar, calamansi juice, ginger, and chili, similar to ceviche." data-image="images/appetizer5.jpg">
+    <div class="menu_image">
+        <img src="images/appetizer5.jpg" alt="">
+    </div>
+    <div class="small_card">
+        <i class="fa-solid fa-heart"></i>
+    </div>
+    <div class="menu_info">
+        <h2>Kinilaw</h2>
+        <h3>₱150.00</h3>
+        <div class="menu_icon">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+        <a href="#" class="menu_btn">Order Now</a>
+    </div>
+</div>
+<!-- Modal for Menu Details -->
+<div id="menuModal" class="modal">
+<div class="modal-content">
+<span class="close">&times;</span>
+<img id="modalImage" src="images/appetizer5.jpg" alt="">
+<h2 id="modalTitle">Kinilaw</h2>
+<h3 id="modalPrice">₱150.00</h3>
+<p id="modalDescription">Fresh fish marinated in vinegar, calamansi juice, ginger, and chili, similar to ceviche.</p>
+</div>
+</div>
+
+         <!--Main Cources-->
+
+        <div class="menu_card" data-title="Chicken Adobo" data-price="₱300.00" data-description="Chicken marinated and simmered in soy sauce, vinegar, garlic, and bay leaves, served with steamed rice." data-image="images/mainCources1.jpg">
+    <div class="menu_image">
+        <img src="images/mainCources1.jpg" alt="">
+    </div>
+    <div class="small_card">
+        <i class="fa-solid fa-heart"></i>
+    </div>
+    <div class="menu_info">
+        <h2>Chicken Adobo</h2>
+        <h3>₱300.00</h3>
+        <div class="menu_icon">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+        <a href="#" class="menu_btn">Order Now</a>
+    </div>
+</div>
+<!-- Modal for Menu Details -->
+<div id="menuModal" class="modal">
+<div class="modal-content">
+<span class="close">&times;</span>
+<img id="modalImage" src="images/mainCources1.jpg" alt="">
+<h2 id="modalTitle">Chicken Adobo</h2>
+<h3 id="modalPrice">₱300.00</h3>
+<p id="modalDescription">Chicken marinated and simmered in soy sauce, vinegar, garlic, and bay leaves, served with steamed rice.</p>
+</div>
+</div>
+
+<div class="menu_card" data-title="Bulgogi" data-price="₱500.00" data-description="Marinated and grilled slices of beef, served with lettuce wraps, rice, and ssamjang (a thick, spicy paste)." data-image="images/mainCources2.jpg">
+    <div class="menu_image">
+        <img src="images/mainCources2.jpg" alt="">
+    </div>
+    <div class="small_card">
+        <i class="fa-solid fa-heart"></i>
+    </div>
+    <div class="menu_info">
+        <h2>Bulgogi</h2>
+        <h3>₱500.00</h3>
+        <div class="menu_icon">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+        <a href="#" class="menu_btn">Order Now</a>
+    </div>
+</div>
+<!-- Modal for Menu Details -->
+<div id="menuModal" class="modal">
+<div class="modal-content">
+<span class="close">&times;</span>
+<img id="modalImage" src="images/mainCources2.jpg" alt="">
+<h2 id="modalTitle">Bulgogi</h2>
+<h3 id="modalPrice">₱500.00</h3>
+<p id="modalDescription">Marinated and grilled slices of beef, served with lettuce wraps, rice, and ssamjang (a thick, spicy paste).</p>
+</div>
+</div>
+
+<div class="menu_card" data-title="Sushi" data-price="₱1,000.00" data-description="An assortment of nigiri, sashimi, and rolls, served with soy sauce, wasabi, and pickled ginger." data-image="images/mainCources3.jpg">
+    <div class="menu_image">
+        <img src="images/mainCources3.jpg" alt="">
+    </div>
+    <div class="small_card">
+        <i class="fa-solid fa-heart"></i>
+    </div>
+    <div class="menu_info">
+        <h2>Sushi</h2>
+        <h3>₱1,000.00</h3>
+        <div class="menu_icon">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+        <a href="#" class="menu_btn">Order Now</a>
+    </div>
+</div>
+<!-- Modal for Menu Details -->
+<div id="menuModal" class="modal">
+<div class="modal-content">
+<span class="close">&times;</span>
+<img id="modalImage" src="images/mainCources3.jpg" alt="">
+<h2 id="modalTitle">Sushi</h2>
+<h3 id="modalPrice">₱1,000.00</h3>
+<p id="modalDescription">An assortment of nigiri, sashimi, and rolls, served with soy sauce, wasabi, and pickled ginger.</p>
+</div>
+</div>
+
+<div class="menu_card" data-title="Paella" data-price="₱1,500.00" data-description="A saffron-infused rice dish with seafood, chicken, and vegetables, cooked in a traditional wide, shallow pan." data-image="images/mainCources4.jpg">
+    <div class="menu_image">
+        <img src="images/mainCources4.jpg" alt="">
+    </div>
+    <div class="small_card">
+        <i class="fa-solid fa-heart"></i>
+    </div>
+    <div class="menu_info">
+        <h2>Paella</h2>
+        <h3>₱1,500.00</h3>
+        <div class="menu_icon">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+        <a href="#" class="menu_btn">Order Now</a>
+    </div>
+</div>
+<!-- Modal for Menu Details -->
+<div id="menuModal" class="modal">
+<div class="modal-content">
+<span class="close">&times;</span>
+<img id="modalImage" src="images/mainCources4.jpg" alt="">
+<h2 id="modalTitle">Paella</h2>
+<h3 id="modalPrice">₱1,500.00</h3>
+<p id="modalDescription">A saffron-infused rice dish with seafood, chicken, and vegetables, cooked in a traditional wide, shallow pan.</p>
+</div>
+</div>
+
+<div class="menu_card" data-title="Bibimbap" data-price="₱250.00" data-description="A bowl of warm rice topped with a variety of sautéed vegetables, sliced beef, a fried egg, and gochujang (chili pepper paste), mixed together before eating." data-image="images/mainCources5.jpg">
+    <div class="menu_image">
+        <img src="images/mainCources5.jpg" alt="">
+    </div>
+    <div class="small_card">
+        <i class="fa-solid fa-heart"></i>
+    </div>
+    <div class="menu_info">
+        <h2>Bibimbap</h2>
+        <h3>₱250.00</h3>
+        <div class="menu_icon">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+        <a href="#" class="menu_btn">Order Now</a>
+    </div>
+</div>
+<!-- Modal for Menu Details -->
+<div id="menuModal" class="modal">
+<div class="modal-content">
+<span class="close">&times;</span>
+<img id="modalImage" src="images/mainCources5.jpg" alt="">
+<h2 id="modalTitle">Bibimbap</h2>
+<h3 id="modalPrice">₱250.00</h3>
+<p id="modalDescription">A bowl of warm rice topped with a variety of sautéed vegetables, sliced beef, a fried egg, and gochujang (chili pepper paste), mixed together before eating.</p>
+</div>
+</div>
+
+
+
+            <!--Desserts-->
+
+            <div class="menu_card" data-title="Leche flan" data-price="₱250.00" data-description="A rich and creamy caramel custard made with sweetened condensed milk, egg yolks, and sugar, steamed to perfection." data-image="images/desserts1.jpg">
+                <div class="menu_image">
+                    <img src="images/desserts1.jpg" alt="">
+                </div>
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <div class="menu_info">
+                    <h2>Leche flan</h2>
+                    <h3>₱250.00</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+            </div>
+            <!-- Modal for Menu Details -->
+            <div id="menuModal" class="modal">
+            <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modalImage" src="images/desserts1.jpg" alt="">
+            <h2 id="modalTitle">Leche flan</h2>
+            <h3 id="modalPrice">₱250.00</h3>
+            <p id="modalDescription">A rich and creamy caramel custard made with sweetened condensed milk, egg yolks, and sugar, steamed to perfection.</p>
+            </div>
+            </div>
+
+        <div class="menu_card" data-title="Hotteok" data-price="₱50.00" data-description="Sweet pancakes filled with brown sugar, cinnamon, and chopped nuts, crispy on the outside and gooey on the inside." data-image="images/desserts2.jpg">
+                <div class="menu_image">
+                    <img src="images/desserts2.jpg" alt="">
+                </div>
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <div class="menu_info">
+                    <h2>Hotteok</h2>
+                    <h3>₱50.00</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+            </div>
+            <!-- Modal for Menu Details -->
+            <div id="menuModal" class="modal">
+            <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modalImage" src="images/desserts2.jpg" alt="">
+            <h2 id="modalTitle">Hotteok</h2>
+            <h3 id="modalPrice">₱250.00</h3>
+            <p id="modalDescription">Sweet pancakes filled with brown sugar, cinnamon, and chopped nuts, crispy on the outside and gooey on the inside.</p>
+            </div>
+            </div>
+
+            <div class="menu_card" data-title="Moshi IceCream" data-price="₱50.00" data-description="Soft and chewy mochi filled with various flavors of ice cream, such as matcha, red bean, and vanilla." data-image="images/desserts3.jpg">
+                <div class="menu_image">
+                    <img src="images/desserts3.jpg" alt="">
+                </div>
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <div class="menu_info">
+                    <h2>Moshi IceCream</h2>
+                    <h3>₱50.00</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+            </div>
+            <!-- Modal for Menu Details -->
+            <div id="menuModal" class="modal">
+            <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modalImage" src="images/desserts3.jpg" alt="">
+            <h2 id="modalTitle">Moshi IceCream</h2>
+            <h3 id="modalPrice">₱50.00</h3>
+            <p id="modalDescription">Soft and chewy mochi filled with various flavors of ice cream, such as matcha, red bean, and vanilla.</p>
+            </div>
+            </div>
+
+            <div class="menu_card" data-title="Churros" data-price="₱100.00" data-description="Crispy fried dough pastries dusted with cinnamon sugar, served with a rich and velvety chocolate dipping sauce." data-image="images/desserts4.jpg">
+                <div class="menu_image">
+                    <img src="images/desserts4.jpg" alt="">
+                </div>
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <div class="menu_info">
+                    <h2>Churros</h2>
+                    <h3>₱100.00</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+            </div>
+            <!-- Modal for Menu Details -->
+            <div id="menuModal" class="modal">
+            <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modalImage" src="images/desserts4.jpg" alt="">
+            <h2 id="modalTitle">Churros</h2>
+            <h3 id="modalPrice">₱100.00</h3>
+            <p id="modalDescription">Crispy fried dough pastries dusted with cinnamon sugar, served with a rich and velvety chocolate dipping sauce.</p>
+            </div>
+            </div>
+
+
+            <div class="menu_card" data-title="Halo-halo" data-price="₱150.00" data-description="A popular Filipino dessert with layers of shaved ice, sweetened beans, fruits, jellies, and topped with leche flan and purple yam ice cream." data-image="images/desserts5.jpg">
+                <div class="menu_image">
+                    <img src="images/desserts5.jpg" alt="">
+                </div>
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <div class="menu_info">
+                    <h2>Halo-halo</h2>
+                    <h3>₱150.00</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+            </div>
+            <!-- Modal for Menu Details -->
+            <div id="menuModal" class="modal">
+            <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modalImage" src="images/desserts5.jpg" alt="">
+            <h2 id="modalTitle">Halo-halo</h2>
+            <h3 id="modalPrice">₱150.00</h3>
+            <p id="modalDescription">A popular Filipino dessert with layers of shaved ice, sweetened beans, fruits, jellies, and topped with leche flan and purple yam ice cream.</p>
+            </div>
+            </div>
+
+        <!--Drinks-->
+
+        <div class="menu_card" data-title="Calamansi Juice" data-price="₱50.00" data-description="A refreshing drink made from the juice of calamansi (a Filipino citrus fruit), sweetened with honey and served over ice." data-image="images/drinks1.jpg">
+            <div class="menu_image">
+                <img src="images/drinks1.jpg" alt="">
+            </div>
+            <div class="small_card">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+            <div class="menu_info">
+                <h2>Calamansi Juice</h2>
+                <h3>₱50.00</h3>
+                <div class="menu_icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+        </div>
+        <!-- Modal for Menu Details -->
+        <div id="menuModal" class="modal">
+        <div class="modal-content">
+        <span class="close">&times;</span>
+        <img id="modalImage" src="images/drinks1.jpg" alt="">
+        <h2 id="modalTitle">Calamansi Juice</h2>
+        <h3 id="modalPrice">₱50.00</h3>
+        <p id="modalDescription">A refreshing drink made from the juice of calamansi (a Filipino citrus fruit), sweetened with honey and served over ice.</p>
+        </div>
+        </div>
+
+        <div class="menu_card" data-title="Soju Cocktail" data-price="₱300.00" data-description="A light and refreshing cocktail made with soju, soda, and fresh fruit puree, such as peach or lychee." data-image="images/drinks2.jpg">
+            <div class="menu_image">
+                <img src="images/drinks2.jpg" alt="">
+            </div>
+            <div class="small_card">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+            <div class="menu_info">
+                <h2>Soju Cocktail</h2>
+                <h3>₱300.00</h3>
+                <div class="menu_icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+        </div>
+        <!-- Modal for Menu Details -->
+        <div id="menuModal" class="modal">
+        <div class="modal-content">
+        <span class="close">&times;</span>
+        <img id="modalImage" src="images/drinks2.jpg" alt="">
+        <h2 id="modalTitle">Soju Cocktail</h2>
+        <h3 id="modalPrice">₱300.00</h3>
+        <p id="modalDescription">A light and refreshing cocktail made with soju, soda, and fresh fruit puree, such as peach or lychee.</p>
+        </div>
+        </div>
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/drinks3.jpg" alt="">
+            </div>
+
+            <div class="small_card">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+
+            <div class="menu_info">
+                <h2>Matcha Tea</h2>
+                <h3>₱200.00</h3>
+                <div class="menu_icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+        </div>
+
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/drinks4.jpg" alt="">
+            </div>
+
+            <div class="small_card">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+
+            <div class="menu_info">
+                <h2>Sangria</h2>
+                <h3>₱300.00</h3>
+                <div class="menu_icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+        </div>
+
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="images/drinks5.jpg" alt="">
+            </div>
+
+            <div class="small_card">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+
+            <div class="menu_info">
+                <h2>Buko Juice</h2>
+                <h3>₱50.00</h3>
+                <div class="menu_icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+        </div>
+    </div>
+    <!--Menu end-->
+
+            <!--About Start-->
+    <div class="about" id="about">
+    <div class="about_main">
+        <div class="image">
+            <img src="images/foodplate2.jpg">
+        </div>
+
+        <div class="about_text">
+            <h1><span>About</span>Us</h1>
+            <h3>Why choose us?</h3>
+            <p>Choose our restaurant for an exceptional dining experience where we prioritize high-quality, locally-sourced ingredients to create delicious and innovative dishes. 
+               Our welcoming atmosphere and attentive service ensure that every visit feels special and memorable. Additionally, we offer a diverse menu that caters to various dietary preferences, 
+               ensuring there’s something delightful for everyone. Our skilled chefs continuously craft new seasonal dishes to keep our offerings exciting and fresh. Plus, our convenient location 
+               and cozy ambiance make it the perfect spot for any occasion, from casual lunches to celebratory dinners.
+            </p>
+
+        </div>
+    </div>
+    <a href="#" class="about_btn">Order Now</a>
+    </div>
+
+                <!--About Ends-->
+
+                <!--Comment Form Start-->
+                
+                    <style>
+        .comment-form {
+            max-width: 500px;
+            margin: auto;
+            padding: 20px;
+            background: rgba(160, 82, 10, 0.427);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(161, 69, 39, 0.821);
+        }
+        .comment-form h2 {
+            margin-bottom: 20px;
+        }
+        .comment-form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .comment-form input[type="text"],
+        .comment-form textarea {
+            width: 95%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .comment-form button {
+            padding: 10px 15px;
+            background: rgba(161, 69, 39, 0.821);
+            border: none;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .comment-form button:hover {
+            background: rgba(161, 69, 39, 0.821);
+        }
+        .comments {
+            max-width: 500px;
+            margin: 20px auto 0;
+            padding: 20px;
+            background: rgba(160, 82, 10, 0.427);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(161, 69, 39, 0.821);
+        }
+        .comment {
+            margin-bottom: 20px;
+        }
+        .comment h4 {
+            margin: 0 0 5px;
+        }
+        .comment p {
+            margin: 0;
+        }
+    </style>
+
+    <div class="comment-form">
+        <h2>Leave a Comment</h2>
+        <form id="form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="comment">Comment:</label>
+            <textarea id="comment" name="comment" rows="4" required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    
+    <div class="comments" id="comments">
+        <h2>Comments</h2>
+    </div>
+    
+    <script>
+        document.getElementById('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const comment = document.getElementById('comment').value;
+            
+            const commentSection = document.getElementById('comments');
+            const newComment = document.createElement('div');
+            newComment.classList.add('comment');
+            
+            const commentContent = `
+                <h4>${name}</h4>
+                <p>${comment}</p>
+            `;
+            newComment.innerHTML = commentContent;
+            
+            commentSection.appendChild(newComment);
+            
+            saveComment(name, comment);
+            document.getElementById('form').reset();
+        });
+
+        function saveComment(name, comment) {
+            const comments = JSON.parse(localStorage.getItem('comments')) || [];
+            comments.push({ name, comment });
+            localStorage.setItem('comments', JSON.stringify(comments));
+        }
+
+        function loadComments() {
+            const comments = JSON.parse(localStorage.getItem('comments')) || [];
+            const commentSection = document.getElementById('comments');
+            comments.forEach(commentData => {
+                const newComment = document.createElement('div');
+                newComment.classList.add('comment');
+                
+                const commentContent = `
+                    <h4>${commentData.name}</h4>
+                    <p>${commentData.comment}</p>
+                `;
+                newComment.innerHTML = commentContent;
+                
+                commentSection.appendChild(newComment);
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', loadComments);
+    </script>
+             
+                
+
+
+
+                <!--Comment Form Ends-->
+
+
+
+    
+                <!--Footer Starts-->
+
+                <footer class="footer-distributed">
+                    <div class="footer-left">
+                        <h3>Prim's <span>Culinarycraft</span></h3>
+
+                        <p class="footer-links">
+                            <a href="home">Home</a>
+                            <a href="popular">Popular</a>
+                            <a href="menu">Menu</a>
+                            <a href="about">About</a>
+                        </p>
+
+                        <p class="footer-company-name">Copyright © 2024 <strong>Prim's Culinarycraft</strong>
+                        All right reserved</p>
+                    </div>
+
+                    <div class="footer-center">
+                        <div>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p><span>Negros Occidental, Philippines</span></p> 
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-phone"></i>
+                            <p>+63 966-351-4518</p>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-envelope"></i>
+                            <p><a href="#">primsculinarycraft@gmail.com</a></p>
+                        </div>
+                    </div>
+
+                   <div class="footer-right">
+                    <p class="footer-company-about">
+                        <span>About the company</span>
+                        <strong>Prim's Culinarycraft</strong> is a restaurant where our diverse menu 
+                        showcases an exquisite blend of international cuisines to delight every palate.
+                    </p>
+                    <div class="footer-icons">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-square-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                   </div> 
+                </footer>
+
+                <!--Footer Ends-->
+</div>
+
+
+
+
+</body>
+</html>
+
+       
+
+                
